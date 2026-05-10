@@ -1,13 +1,17 @@
 # Echoed Nights
 
+
+> ⚠️ **Development Notice:** The code and documentation in this repository reflect an **early build** of Echoed Nights. Several features and mechanics changed significantly before release.
+>
+> Notable example: enemy AI was originally architected using **reinforcement learning** — training agents through environmental simulations. This approach was scoped down due to the computational resources required to run sufficient training simulations. The shipped game uses **NavMesh pathfinding with a finite state machine**, which proved more stable and performant within the project's constraints. This repository is preserved as a record of the full development process, including early design decisions and architectural exploration.
+
 A **first-person psychological horror game** built in Unity with C#, featuring reactive enemy AI, dynamic environmental storytelling, and a looping nightmare atmosphere.
 
 > **Role:** Lead Developer & Director  
 > **Team:** Solo / small team  
-> **Duration:** 2022 - 2023
+> **Duration:** 2023 - 2024
 
 ## Overview
-
 Echoed Nights puts the player in a dark, shifting environment where they must navigate terror while being hunted by intelligent AI enemies. The project demonstrates end-to-end game development — from initial design documentation through final quality assurance.
 
 ## Key Features
