@@ -7,6 +7,12 @@
 
 A **first-person psychological horror game** built in Unity with C#, featuring reactive enemy AI, dynamic environmental storytelling, and a looping nightmare atmosphere.
 
+## Screenshots
+
+| | | |
+|---|---|---|
+| ![Hallway](screenshots/gameplay-1.png) | ![Corridor](screenshots/gameplay-2.png) | ![Event Room](screenshots/gameplay-3.png) |
+
 > **Role:** Lead Developer & Director  
 > **Team:** Solo / small team  
 > **Duration:** 2023 - 2024
