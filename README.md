@@ -1,11 +1,24 @@
 # Echoed Nights
 
+A **first-person psychological horror game** built in Unity with C#, featuring reactive enemy AI, dynamic environmental storytelling, and a looping nightmare atmosphere. Built as my graduate capstone at Saint Martin's University and published on Steam.
 
-> ⚠️ **Development Notice:** The code and documentation in this repository reflect an **early build** of Echoed Nights. Several features and mechanics changed significantly before release.
+**[▶ Echoed Nights on Steam](https://store.steampowered.com/app/4340810/Echoed_Nights/)**
+
+> ### 📄 This repository is the project record, not the source code
 >
-> Notable example: enemy AI was originally architected using **reinforcement learning** — training agents through environmental simulations. This approach was scoped down due to the computational resources required to run sufficient training simulations. The shipped game uses **NavMesh pathfinding with a finite state machine**, which proved more stable and performant within the project's constraints. This repository is preserved as a record of the full development process, including early design decisions and architectural exploration.
+> The Unity project is not published here. What this repo holds is the written and visual record of the project:
+>
+> | File | What it is |
+> |---|---|
+> | [`MSCS-ProjectReport-Landon.pdf`](MSCS-ProjectReport-Landon.pdf) | The capstone report — design, AI architecture, methodology, QA, and results |
+> | [`Echoed Nights.pptx`](Echoed%20Nights.pptx) | The capstone defense presentation |
+> | [`screenshots/`](screenshots) | Gameplay captures from the shipped build |
+>
+> If you came here for code, this isn't that repo — read the report instead. The evidence for this project is a game that shipped and a document that explains how it was built.
 
-A **first-person psychological horror game** built in Unity with C#, featuring reactive enemy AI, dynamic environmental storytelling, and a looping nightmare atmosphere.
+> ⚠️ **Development note:** Several features and mechanics changed significantly between the documented design and release.
+>
+> Notable example: enemy AI was originally architected using **reinforcement learning** — training agents through environmental simulations. This approach was scoped down due to the computational resources required to run sufficient training simulations. The shipped game uses **NavMesh pathfinding with a finite state machine**, which proved more stable and performant within the project's constraints. The report is preserved as a record of the full development process, including early design decisions and architectural exploration.
 
 ## Screenshots
 
@@ -53,7 +66,7 @@ NavMesh handles real-time pathfinding and obstacle avoidance, ensuring enemies n
 
 ## Academic Context
 
-Developed as a graduate capstone project at **Saint Martin's University** (M.S. Computer Science, 2023). Includes full project documentation and a written research report on AI agent design in game environments.
+Developed as a graduate capstone project at **Saint Martin's University** (M.S. Computer Science, completed May 2024). The [project report](MSCS-ProjectReport-Landon.pdf) in this repository is the full written research report on AI agent design in game environments.
 
 ---
 
