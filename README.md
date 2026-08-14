@@ -18,7 +18,7 @@ A **first-person psychological horror game** built in Unity with C#, featuring r
 
 > ⚠️ **Development note:** Several features and mechanics changed significantly between the documented design and release.
 >
-> Notable example: enemy AI was originally architected using **reinforcement learning** — training agents through environmental simulations. This approach was scoped down due to the computational resources required to run sufficient training simulations. The shipped game uses **NavMesh pathfinding driven by coroutines and distance thresholds** — simpler even than the four-state FSM the report describes, which survives in `Monster.cs` only as commented-out code. The report is preserved as a record of the full development process, including early design decisions and architectural exploration.
+> Notable example: enemy AI was originally architected using **reinforcement learning** — training agents through environmental simulations. This approach was scoped down due to the computational resources required to run sufficient training simulations. The shipped game uses **NavMesh pathfinding driven by coroutines and distance thresholds** — simpler even than the state-machine design the report describes, which survives in `Monster.cs` only as commented-out code. The report is preserved as a record of the full development process, including early design decisions and architectural exploration.
 
 ## Screenshots
 
@@ -35,7 +35,7 @@ Echoed Nights puts the player in a dark, shifting environment where they must na
 
 ## Key Features
 
-- **Enemy AI System** — NavMesh pathfinding with coroutine-driven Wander/Chase/Flee behaviour on distance thresholds (see AI Architecture below — the four-state FSM in the report was cut before release)
+- **Enemy AI System** — NavMesh pathfinding with coroutine-driven Wander/Chase/Flee behaviour on distance thresholds (see AI Architecture below — the state-machine design in the report was cut before release)
 - **Environmental Storytelling** — atmospheric sound design, lighting, and environmental cues drive the horror experience without heavy exposition
 - **Full Project Lifecycle** — bi-weekly stakeholder reviews, milestone tracking, and structured QA process from design through delivery
 
@@ -45,14 +45,14 @@ Echoed Nights puts the player in a dark, shifting environment where they must na
 |---|---|
 | Engine | Unity 2022.3 |
 | Language | C# |
-| AI | NavMesh Pathfinding, coroutine-driven behaviour (the FSM is in the report, not the build) |
+| AI | NavMesh Pathfinding, coroutine-driven behaviour (the state-machine design is in the report, not the build) |
 | Physics | Unity Rigidbody, Collider system |
 | Audio | Unity Audio Mixer |
 | Version Control | Git / GitHub |
 
 ## AI Architecture — the design, and what actually shipped
 
-The capstone report specifies a **four-state finite state machine**: Patrol
+The capstone report describes a **state-machine design** with patrol, alert and search behaviours: Patrol
 (waypoint following), Alert (investigate sound or peripheral movement), Chase
 (pursue on confirmed line of sight), and Search (sweep the last known position).
 That is the design.
